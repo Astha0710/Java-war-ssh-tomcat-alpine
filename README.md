@@ -8,6 +8,8 @@ docker build -t war-ssh-test .
 Run the container:
 docker run -d -p 8080:8080 -p 2222:2222 -e SSH_PORT=2222 --name war-ssh-test test
 
+browse to http://localhost:8080/SampleWebApp
+
 The SpringBoot application should be running on port 8080 now.
 Test SSH:
 ssh root@localhost -p 2222
